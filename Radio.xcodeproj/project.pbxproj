@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		951E854C1FE25A7300D50121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E854B1FE25A7300D50121 /* AppDelegate.swift */; };
-		951E854E1FE25A7300D50121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E854D1FE25A7300D50121 /* ViewController.swift */; };
+		951E854E1FE25A7300D50121 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E854D1FE25A7300D50121 /* MainViewController.swift */; };
 		951E85511FE25A7300D50121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951E854F1FE25A7300D50121 /* Main.storyboard */; };
 		951E85531FE25A7300D50121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951E85521FE25A7300D50121 /* Assets.xcassets */; };
 		951E85561FE25A7300D50121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951E85541FE25A7300D50121 /* LaunchScreen.storyboard */; };
+		951E85631FE25BCB00D50121 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E85621FE25BCB00D50121 /* PlayerViewController.swift */; };
+		9561EE9E1FEA41B600059161 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9561EE9D1FEA41B600059161 /* ListViewController.swift */; };
+		9561EEA01FEA4C0C00059161 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9561EE9F1FEA4C0C00059161 /* Radio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		951E85481FE25A7300D50121 /* Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		951E854B1FE25A7300D50121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		951E854D1FE25A7300D50121 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		951E854D1FE25A7300D50121 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		951E85501FE25A7300D50121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		951E85521FE25A7300D50121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		951E85551FE25A7300D50121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		951E85571FE25A7300D50121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		951E85621FE25BCB00D50121 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		9561EE9D1FEA41B600059161 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		9561EE9F1FEA4C0C00059161 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		951E854A1FE25A7300D50121 /* Radio */ = {
 			isa = PBXGroup;
 			children = (
-				951E854B1FE25A7300D50121 /* AppDelegate.swift */,
-				951E854D1FE25A7300D50121 /* ViewController.swift */,
-				951E854F1FE25A7300D50121 /* Main.storyboard */,
+				95ACDA3D1FF206840046BAEE /* App Delegate */,
+				95ACDA3F1FF207100046BAEE /* Models */,
+				95ACDA3E1FF206F50046BAEE /* View Controllers */,
+				95ACDA401FF207380046BAEE /* Storyboards */,
 				951E85521FE25A7300D50121 /* Assets.xcassets */,
-				951E85541FE25A7300D50121 /* LaunchScreen.storyboard */,
 				951E85571FE25A7300D50121 /* Info.plist */,
 			);
 			path = Radio;
+			sourceTree = "<group>";
+		};
+		95ACDA3D1FF206840046BAEE /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				951E854B1FE25A7300D50121 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		95ACDA3E1FF206F50046BAEE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				951E854D1FE25A7300D50121 /* MainViewController.swift */,
+				9561EE9D1FEA41B600059161 /* ListViewController.swift */,
+				951E85621FE25BCB00D50121 /* PlayerViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		95ACDA3F1FF207100046BAEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9561EE9F1FEA4C0C00059161 /* Radio.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95ACDA401FF207380046BAEE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				951E854F1FE25A7300D50121 /* Main.storyboard */,
+				951E85541FE25A7300D50121 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				951E854E1FE25A7300D50121 /* ViewController.swift in Sources */,
+				9561EEA01FEA4C0C00059161 /* Radio.swift in Sources */,
+				951E854E1FE25A7300D50121 /* MainViewController.swift in Sources */,
 				951E854C1FE25A7300D50121 /* AppDelegate.swift in Sources */,
+				9561EE9E1FEA41B600059161 /* ListViewController.swift in Sources */,
+				951E85631FE25BCB00D50121 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5PWYZ4J78Z;
 				INFOPLIST_FILE = Radio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tokayon.Radio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5PWYZ4J78Z;
 				INFOPLIST_FILE = Radio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tokayon.Radio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
